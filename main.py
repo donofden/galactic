@@ -9,8 +9,6 @@ from classes.neptune import Neptune
 from classes.pluto import Pluto
 from classes.sun import Sun
 
-from classes import earth,mercury,venus,mars,jupiter,saturn,uranus,neptune,pluto,sun
-
 def printOut(planet, weight):
     """
     To beautify the output.
