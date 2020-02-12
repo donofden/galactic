@@ -21,3 +21,9 @@ start: ## will install required packages
 .PHONY: test
 test: ## to do UnitTest
 	python -m unittest discover
+
+.PHONY: test-cov
+test-cov: ## To Check Unittest coverage
+	coverage run -m unittest discover;
+	coverage report -m;
+	coverage html
