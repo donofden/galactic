@@ -17,3 +17,7 @@ init: ## will install required packages
 .PHONY: start
 start: ## will install required packages
 	python3 main.py
+
+.PHONY: test
+test: ## to do UnitTest
+	python -m unittest discover
