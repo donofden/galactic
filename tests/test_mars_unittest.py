@@ -4,7 +4,7 @@ from classes import mars
 
 class MarsTest(unittest.TestCase):
         
-    def test_calculate_weight(self):
+    def test_calculate_weight_mars(self):
         """
         Test 'calculateWeight'
         """

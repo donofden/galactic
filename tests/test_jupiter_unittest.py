@@ -11,7 +11,7 @@ class JupiterTest(unittest.TestCase):
         jupiterObj = jupiter.Jupiter()
         calculatedWeight = jupiterObj.calculateWeight(80)
         
-        # workaround: since the assertion of whole float value showing miss matching
+        # workaround: since the assertion of whole float value showing mismatching
         calculatedWeight = round(calculatedWeight, 2)
         
         self.assertEqual(calculatedWeight,202.16,"Should be 202.16")
