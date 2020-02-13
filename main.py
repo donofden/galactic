@@ -18,44 +18,58 @@ def printOut(planet, weight):
     spaceFiller = " " * (8 - planetLen)
     print(planet + spaceFiller + " : " + roundValue," ")
 
-print("Enter your Weight: ")
-weight = int(input())
+class WeightCalculator:
 
-earthObj = Earth()
-printOut(earthObj.planet, weight)
+    def get_weight(self):
+        """
+        To get input from user.
+        """
+        self.weight = int(input('Enter your Weight:'))
 
-mercuryObj = Mercury()
-calculatedWeight = mercuryObj.calculateWeight(weight)
-printOut(mercuryObj.planet, calculatedWeight)
+    def run(self):
+        """
+        Calculate the weight in other planets
+        """
+        self.get_weight()
+        earthObj = Earth()
+        printOut(earthObj.planet, self.weight)
 
-venusObj = Venus()
-calculatedWeight = venusObj.calculateWeight(weight)
-printOut(venusObj.planet, calculatedWeight)
+        mercuryObj = Mercury()
+        calculatedWeight = mercuryObj.calculateWeight(self.weight)
+        printOut(mercuryObj.planet, calculatedWeight)
 
-marsObj = Mars()
-calculatedWeight = marsObj.calculateWeight(weight)
-printOut(marsObj.planet, calculatedWeight)
+        venusObj = Venus()
+        calculatedWeight = venusObj.calculateWeight(self.weight)
+        printOut(venusObj.planet, calculatedWeight)
 
-jupiterObj = Jupiter()
-calculatedWeight = jupiterObj.calculateWeight(weight)
-printOut(jupiterObj.planet, calculatedWeight)
+        marsObj = Mars()
+        calculatedWeight = marsObj.calculateWeight(self.weight)
+        printOut(marsObj.planet, calculatedWeight)
 
-saturnObj = Saturn()
-calculatedWeight = saturnObj.calculateWeight(weight)
-printOut(saturnObj.planet, calculatedWeight)
+        jupiterObj = Jupiter()
+        calculatedWeight = jupiterObj.calculateWeight(self.weight)
+        printOut(jupiterObj.planet, calculatedWeight)
 
-uranusObj = Uranus()
-calculatedWeight = uranusObj.calculateWeight(weight)
-printOut(uranusObj.planet, calculatedWeight)
+        saturnObj = Saturn()
+        calculatedWeight = saturnObj.calculateWeight(self.weight)
+        printOut(saturnObj.planet, calculatedWeight)
 
-neptuneObj = Neptune()
-calculatedWeight = neptuneObj.calculateWeight(weight)
-printOut(neptuneObj.planet, calculatedWeight)
+        uranusObj = Uranus()
+        calculatedWeight = uranusObj.calculateWeight(self.weight)
+        printOut(uranusObj.planet, calculatedWeight)
 
-plutoObj = Pluto()
-calculatedWeight = plutoObj.calculateWeight(weight)
-printOut(plutoObj.planet, calculatedWeight)
+        neptuneObj = Neptune()
+        calculatedWeight = neptuneObj.calculateWeight(self.weight)
+        printOut(neptuneObj.planet, calculatedWeight)
 
-sunObj = Sun()
-calculatedWeight = sunObj.calculateWeight(weight)
-printOut(sunObj.planet, calculatedWeight)
+        plutoObj = Pluto()
+        calculatedWeight = plutoObj.calculateWeight(self.weight)
+        printOut(plutoObj.planet, calculatedWeight)
+
+        sunObj = Sun()
+        calculatedWeight = sunObj.calculateWeight(self.weight)
+        printOut(sunObj.planet, calculatedWeight)
+
+if __name__ == '__main__':
+    wc = WeightCalculator()
+    wc.run()
