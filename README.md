@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.com/donofden/galactic.svg?branch=master)](https://travis-ci.com/donofden/galactic)
 [![codecov](https://codecov.io/gh/donofden/galactic/branch/master/graph/badge.svg)](https://codecov.io/gh/donofden/galactic)
 [![CodeFactor](https://www.codefactor.io/repository/github/donofden/galactic/badge)](https://www.codefactor.io/repository/github/donofden/galactic)
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
 ## Galactic
 
