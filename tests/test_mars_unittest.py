@@ -11,4 +11,3 @@ class MarsTest(unittest.TestCase):
         marsObj = mars.Mars()
         calculatedWeight = marsObj.calculateWeight(80)
         self.assertEqual(calculatedWeight, 30.26299694189602, "Should be 30.26299694189602")
-

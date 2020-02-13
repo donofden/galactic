@@ -4,7 +4,6 @@ import io
 
 from unittest import mock
 from unittest.mock import patch
-import io
 
 
 class MainTest(unittest.TestCase):
