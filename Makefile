@@ -12,7 +12,7 @@ explain:
 
 .PHONY: init
 init: ## will install required packages
-	pip install -r requirements.txt
+	pip3 install -r requirements.txt
 
 .PHONY: start
 start: ## will install required packages
@@ -20,7 +20,7 @@ start: ## will install required packages
 
 .PHONY: test
 test: ## to do UnitTest
-	python -m unittest discover
+	python3 -m unittest discover
 
 .PHONY: test-cov
 test-cov: ## To Check Unittest coverage
