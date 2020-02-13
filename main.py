@@ -24,7 +24,7 @@ class WeightCalculator:
         """
         To get input from user.
         """
-        self.weight = int(input('Enter your Weight:'))
+        self.weight = float(input('Enter your Weight:'))
 
     def run(self):
         """
