@@ -9,7 +9,7 @@ with open('README.md') as f:
     readme = f.read()
 
 with open('LICENSE') as f:
-    license = f.read()
+    licenseDetails = f.read()
 
 setup(
     name='Galactic',
@@ -19,6 +19,6 @@ setup(
     author='DonOfDen',
     author_email='me@donofden.com',
     url='https://github.com/donofden/galactic',
-    license=license,
+    license=licenseDetails,
     packages=find_packages(exclude=('docs'))
 )
