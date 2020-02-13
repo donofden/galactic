@@ -1,3 +1,4 @@
+dist: trusty
 language: python
 python:
 - '3.7'
@@ -5,8 +6,14 @@ install:
 - pip install -r requirements.txt
 script:
 - coverage run -m unittest discover
+- sonar-scanner
 after_success:
 - bash <(curl -s https://codecov.io/bash)
+addons:
+  sonarcloud:
+    organization: "donofden"
+    token:
+      secure: "IWkRqvBI38kTZqzj6hnwW0vehn4usf0aWxrnyGNz4m1ZYpOyDrUtBqwtn6DvBjHHZXMVBdE2r4N4LPjjG3CGs1ypHZpduc+RD1aH3owLgEG/+mPeYbGRPsNXYH0a6tWAn5sYJyMmC9Kzh8DthLMNphgQH+IMeLhONkhsG+frzDNTjC3Yy9a/glGqfnn8kfXa3PPgt1eNecnEA4Fk3HI0JKdu57W6IbJawHZty5it252D74AEEZ1K9hgxObDVMzqCVdnAOnudynKHH53rlfOdupOXptIQYM3hB/u3WmGAGQp5b4F5IUQ+G8dB+eawotbd8fmPKlQwJASZlaBGBXKGuuTZN3Mi7Twpig40N5qJ7BKwqswYI7vHZCffMviSO8P41N4pPB/Ze43PaXZrvMyO3ef7MUMP3gxcZIdHCOPDa2WFWUxtcSesAR0fnfOChad/r1ImzIwRGxWgBpuDaRL+8fP4nu+xawEX9Ht9KBFCf55Dt6ejb4svCBwhITvkCaLjtfDRzaU2ssZTIHIolT6jQmqyW6CAmR936P6GKOEK1vjnsiZ2ymL7tgEIYePIjP/aBVde/ZP8l8Y2/NOW6xxp9rUdEv373Nk0p/korWm08o856U6IMEJDyJ2+eLz/Nf1dlongoiy1hHnC3EMRS/rcFrePHZudpnJ6TQyp52K2j9c=" # encrypted value of your token
 env:
   global:
     secure: IWkRqvBI38kTZqzj6hnwW0vehn4usf0aWxrnyGNz4m1ZYpOyDrUtBqwtn6DvBjHHZXMVBdE2r4N4LPjjG3CGs1ypHZpduc+RD1aH3owLgEG/+mPeYbGRPsNXYH0a6tWAn5sYJyMmC9Kzh8DthLMNphgQH+IMeLhONkhsG+frzDNTjC3Yy9a/glGqfnn8kfXa3PPgt1eNecnEA4Fk3HI0JKdu57W6IbJawHZty5it252D74AEEZ1K9hgxObDVMzqCVdnAOnudynKHH53rlfOdupOXptIQYM3hB/u3WmGAGQp5b4F5IUQ+G8dB+eawotbd8fmPKlQwJASZlaBGBXKGuuTZN3Mi7Twpig40N5qJ7BKwqswYI7vHZCffMviSO8P41N4pPB/Ze43PaXZrvMyO3ef7MUMP3gxcZIdHCOPDa2WFWUxtcSesAR0fnfOChad/r1ImzIwRGxWgBpuDaRL+8fP4nu+xawEX9Ht9KBFCf55Dt6ejb4svCBwhITvkCaLjtfDRzaU2ssZTIHIolT6jQmqyW6CAmR936P6GKOEK1vjnsiZ2ymL7tgEIYePIjP/aBVde/ZP8l8Y2/NOW6xxp9rUdEv373Nk0p/korWm08o856U6IMEJDyJ2+eLz/Nf1dlongoiy1hHnC3EMRS/rcFrePHZudpnJ6TQyp52K2j9c=
