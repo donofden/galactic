@@ -67,7 +67,7 @@ python3 main.py
 Enter your Weight:
 ```
 
-For example: If we enter `80` as my input. 
+For example: If we enter `80` as input.
 
 ```cmd
 ~/galactic(master*) » make start
