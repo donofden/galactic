@@ -24,13 +24,15 @@ class WeightCalculator:
         """
         To get input from user.
         """
-        self.weight = float(input('Enter your Weight:'))
+        self.weight = float(input('\nEnter your Weight:'))
 
     def run(self):
         """
         Calculate the weight in other planets
         """
         self.get_weight()
+        
+        print("\n")
         earthObj = Earth()
         printOut(earthObj.planet, self.weight)
 
