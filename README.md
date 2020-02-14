@@ -6,9 +6,9 @@
 
 # Galactic
 
-Galactic is project which binds software with outer space, its a fun project to understand outspace and [Python](https://www.python.org/) :)
+Galactic is project which binds software with outer space, its a fun project to understand outerspace and [Python](https://www.python.org/) :)
 
-A CLI Application, where you enter your weight. The application will calculate your weight in other plannets in solar system, including our star (SUN).
+A CLI Application, where you enter your weight. The application will calculate your weight in other planets in solar system, including our star (SUN).
 
 ## Aim of the application
 
@@ -17,11 +17,13 @@ A CLI Application, where you enter your weight. The application will calculate y
 - To learn `Python Unittest`.
 - To learn more about `setup.py` files.
 - [`Travis CI`](https://travis-ci.com/donofden/galactic) usage and implementation for Python Project.
-- To Learn [`Codecov`](https://codecov.io) integartion with [`Travis CI`](https://travis-ci.com/donofden/galactic).
+- To Learn [`Codecov`](https://codecov.io) integration with [`Travis CI`](https://travis-ci.com/donofden/galactic).
 
 ## The Relationship Between Gravity and Mass and Distance
 
-your weight is a measure of the pull of gravity between you and the body you are standing on. This force of gravity depends on a few things. First, it depends on your mass and the mass of the planet you are standing on. If you double your mass, gravity pulls on you twice as hard. If the planet you are standing on is twice as massive, gravity also pulls on you twice as hard. On the other hand, the farther you are from the center of the planet, the weaker the pull between the planet and your body. The force gets weaker quite rapidly. If you double your distance from the planet, the force is one-fourth. If you triple your separation, the force drops to one-ninth. Ten times the distance, one-hundredth the force. See the pattern? The force drops off with the square of the distance.
+Your weight is a measure of the pull of gravity between you and the body you are standing on. This force of gravity depends on a few things.
+
+First, it depends on your mass and the mass of the planet you are standing on. If you double your mass, gravity pulls on you twice as hard. If the planet you are standing on is twice as massive, gravity also pulls on you twice as hard. On the other hand, the farther you are from the center of the planet, the weaker the pull between the planet and your body. The force gets weaker quite rapidly. If you double your distance from the planet, the force is one-fourth. If you triple your separation, the force drops to one-ninth. Ten times the distance, one-hundredth the force. See the pattern? The force drops off with the square of the distance.
 
 ## How to Install and Run
 
