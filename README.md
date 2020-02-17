@@ -19,6 +19,8 @@ A CLI Application, where you enter your weight. The application will calculate y
 - [`Travis CI`](https://travis-ci.com/donofden/galactic) usage and implementation for Python Project.
 - To Learn [`Codecov`](https://codecov.io) integration with [`Travis CI`](https://travis-ci.com/donofden/galactic).
 
+![Full screen](docs/galactic.jpg)
+
 ## The Relationship Between Gravity and Mass and Distance
 
 Your weight is a measure of the pull of gravity between you and the body you are standing on. This force of gravity depends on a few things.
